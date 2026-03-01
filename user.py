@@ -177,7 +177,7 @@ async def generate_and_send_confirmation(message: Message, state: FSMContext):
     data = await state.get_data()
     user = await db.get_user(message.from_user.id)
     
-    caption = (f"📦 <b>YANGI BUYURTMA HOLATI</b>\n━━━━━━━━━━━━\n"
+    caption = (f"📦 <b>MUAMMOLI BUYURTMA HOLATI</b>\n━━━━━━━━━━━━\n"
                f"🆔 <b>Mahsulot:</b> {data['product_id']}\n"
                f"📱 <b>Tel:</b> {data['client_phone']}\n"
                f"⚠️ <b>Holat/Sabab:</b> {data['reason']}\n━━━━━━━━━━━━\n"
